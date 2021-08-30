@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import './navBar.css';
+import '../../assets/css/navBar.css';
 //import 'tu-accion/src/assets/css/navBar.css';
 import { Link } from 'react-router-dom';
 import NabItem from './nabItem';
-import Logo from './logo.svg';
+import Logo from '../../assets/img/logo.svg';
 
 class NavBar extends Component {
 	render () {
@@ -25,7 +25,7 @@ class NavBar extends Component {
 							<NabItem nombre="Elabora tu Accion" direccion='/elabora-tu-accion'></NabItem>
 							<NabItem nombre="Contact" direccion='/Contact'></NabItem>
 						</ul>
-						<form class="form-inline my-2 my-lg-0">
+						<form class="form-inline my-2 my-lg-0" style = {{'margin-left' : '32%', 'font-size' : '25px'}}>
 							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
 							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 						</form>
