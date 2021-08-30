@@ -1,0 +1,40 @@
+.fondo {
+    background-color: #72bb;
+    overflow: hidden;
+}
+
+.links {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.links:hover {
+    color:  #3be5b2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/*.boton1 {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin-left: -40%;
+    cursor: pointer;
+    width: 150%;
+    border: 3px solid #72bb53;
+    transition: all 0.3s;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.boton1:hover {
+    background-color: #3be5b2;
+    color: white;
+}*/
+
+.imagenT {
+    margin-left: -450%;
+}
