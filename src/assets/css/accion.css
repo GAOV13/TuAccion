@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.accion_bg {
+	background-color: rgb(250, 250, 250);
+	overflow: hidden;
+}
+
+.accion_header {
+	background-color: rgb(216, 216, 216);
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.accion_header_col{
+	padding: 100px;
+}
+
+.accion_info{
+	background-color: rgb(216, 216, 216);
+	width: 60%;
+	/* padding: 255px; */
+	display: flex;
+	flex-direction: column;
+}
+
+.accion_palabras{
+	text-align: left;
+}
+
+.accion_palabras h1{
+	font-size: 62px;
+}
+
+.accion_palabras p{
+	margin: 10px 0 40px;
+	font-size: 23px;
+	color: rgb(149, 147, 156);
+}
+
+.accion_palabras h2{
+	font-size: 23px;
+	color: rgba(149, 147, 156, 0.60);
+}
+
+.accion_boton_container {
+	background-color: rgb(216, 216, 216);
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: stretch;
+}
+
+.aBoton_info {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 0 0 0 1%;
+}
+
+.aBoton_info:hover {
+	color: #3be5b2;
+	transition: 1s;
+}
+.aBoton_info img {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.aBoton_img {
+	width: 135px;
+	height: 135px;
+}
+
+.accion_img {
+	background-color: rgb(216, 216, 216);
+	width: 40%;
+}
+
+.temp {
+	position: relative;
+}
+
+
+

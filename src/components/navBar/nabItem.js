@@ -20,7 +20,6 @@ class NabItem extends Component {
 	}
 
 	componentDidMount() {
-		console.log("Estoy en Cons NavItem");
 	}
 
 	componentWillUnmount(){

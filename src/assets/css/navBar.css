@@ -1,40 +1,22 @@
 .fondo {
-    background-color: #a17d7d;
-    overflow: hidden;
+  background-color: rgb(216, 216, 216);
+  overflow: hidden;
 }
 
 .links {
-    color: white;
-    text-decoration: none;
-    transition: all 0.4s;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s;
 }
 
 .links:hover {
-    color:  #3be5b2;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.4s;
+  color:  #3be5b2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
 }
-
-/*.boton1 {
-    border-radius: 50px;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    margin-left: -40%;
-    cursor: pointer;
-    width: 150%;
-    border: 3px solid #72bb53;
-    transition: all 0.3s;
-    padding-bottom: 3px;
-    padding-top: 3px;
-}
-
-.boton1:hover {
-    background-color: #3be5b2;
-    color: white;
-}*/
 
 .imagenT {
-    margin-left: -450%;
+  margin-left: -450%;
 }
