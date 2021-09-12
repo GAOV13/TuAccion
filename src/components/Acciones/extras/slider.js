@@ -1,31 +1,43 @@
 import { Component } from "react";
 import { Link } from 'react-router-dom';
 import "../../../assets/css/slider.css"
+import Celes from "../../../assets/img/celeste2.jpg"
+import Anfi from "../../../assets/img/Anfibio.png"
+import Legal from "../../../assets/img/legaltech.jpg"
 
 class Slider extends Component {
   render (){
     return (
-      <div class="slideshow-container">
-        <div class={this.state.mySlides[0]}>
-          <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-            <p class="author">- John Keats</p>
+      <div className="slideshow-container">
+        <div className={this.state.mySlides[0]}>
+          <img src={Legal}></img>
+          <div className="texto">  
+            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+            <p className="author">- John Keats</p>
+          </div>
         </div>
-        <div class={this.state.mySlides[1]}>
-          <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-          <p class="author">- Ernest Hemingway</p>
+        <div className={this.state.mySlides[1]}>
+          <img src={Celes}></img>
+          <div className="texto">
+            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <p className="author">- Ernest Hemingway</p>
+          </div>
         </div>
-        <div class={this.state.mySlides[2]}>
-          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-          <p class="author">- Thomas A. Edison</p>
+        <div className={this.state.mySlides[2]}>
+          <img src="https://4.bp.blogspot.com/-_D_c824ezhw/WqmEgd7XReI/AAAAAAAB0zQ/hFgzXIP2ahwBvP93WzziZZR_3KCM7Ws3QCK4BGAYYCw/s1600/imagenes-paisajes-hermosos-cbezerraphotos-emerald-lake-canada.jpg"></img>
+          <div className="texto">  
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p className="author">- Thomas A. Edison</p>
+          </div>
         </div>
         <div>
-          <Link class="prev" onClick={() => this.plusSlides(-1)} to={this.props.pag}>&#10094;</Link>
-          <Link class="next" onClick={() => this.plusSlides(1)} to={this.props.pag}>&#10095;</Link>
+          <Link className="estilo prev" onClick={() => this.plusSlides(-1)} to={this.props.pag}>&#10094;</Link>
+          <Link className="estilo next" onClick={() => this.plusSlides(1)} to={this.props.pag}>&#10095;</Link>
         </div>
-        <div class="dot-container">
-          <span class={this.state.dot[0]} onClick={() => this.currentSlide(1)}></span>
-          <span class={this.state.dot[1]} onClick={() => this.currentSlide(2)}></span>
-          <span class={this.state.dot[2]} onClick={() => this.currentSlide(3)}></span>
+        <div className="dot-container">
+          <span className={this.state.dot[0]} onClick={() => this.currentSlide(1)}></span>
+          <span className={this.state.dot[1]} onClick={() => this.currentSlide(2)}></span>
+          <span className={this.state.dot[2]} onClick={() => this.currentSlide(3)}></span>
         </div>
       </div>
     );

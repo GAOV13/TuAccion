@@ -1,22 +1,46 @@
-.fondo {
+.nav_container{
   background-color: rgb(216, 216, 216);
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.links {
+.nav_logo{
+  padding: 15px 100px;
+  width: 25%;
+  text-align: left;
+}
+
+.nav_logo h1{
+  font-size: 25px;
+  font-weight : bold;
+}
+
+.nav_links_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px 0 0 0;
+  width: 50%;
+}
+
+.nav_links {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
   transition: all 0.4s;
 }
 
-.links:hover {
+.nav_links:hover {
   color:  #3be5b2;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.4s;
 }
 
-.imagenT {
-  margin-left: -450%;
+.nav_serch{
+  padding: 15px 0 0 30px;
+  text-align: left;
+}
+
+.nav_serch input{
+  border-radius: 15px;
 }
