@@ -1,0 +1,22 @@
+.column {
+    float: left;
+    padding: 200px;
+    background-color:aqua; /* Solo for test */
+}
+  
+.left {
+    width: 70%;
+    text-align: left;
+}
+
+.right {
+    
+    width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

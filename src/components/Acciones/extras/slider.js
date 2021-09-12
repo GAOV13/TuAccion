@@ -19,8 +19,8 @@ class Slider extends Component {
           <p class="author">- Thomas A. Edison</p>
         </div>
         <div>
-          <Link class="prev" onClick={() => this.plusSlides(-1)} to="/Acciones">&#10094;</Link>
-          <Link class="next" onClick={() => this.plusSlides(1)} to="/Acciones">&#10095;</Link>
+          <Link class="prev" onClick={() => this.plusSlides(-1)} to={this.props.pag}>&#10094;</Link>
+          <Link class="next" onClick={() => this.plusSlides(1)} to={this.props.pag}>&#10095;</Link>
         </div>
         <div class="dot-container">
           <span class={this.state.dot[0]} onClick={() => this.currentSlide(1)}></span>

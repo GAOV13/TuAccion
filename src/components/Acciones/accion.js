@@ -24,7 +24,7 @@ class Accion extends Component{
 						</div>
 					</div>
 					<div className='accion_header_col accion_img'>
-            <Slider onIdSelect={this.updateId} id={this.state.id}></Slider>
+            <Slider onIdSelect={this.updateId} id={this.state.id} pag={"/Acciones"}></Slider>
 					</div>
 				</section>
 				<section className='temp'>

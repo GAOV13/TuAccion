@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 //importaciones de componentes
 import NavBar from './components/navBar/navBar';
 import Accion from './components/Acciones/accion';
+import Peticion from './components/Acciones/peticion'
 
 class App extends Component {
   render () {
@@ -24,6 +25,10 @@ class App extends Component {
             <Route path='/Acciones' exact>
               <Accion></Accion>
             </Route>
+            <Route path='/Acciones/derecho-de-peticion' exact>
+              <Peticion></Peticion>
+            </Route>
+            
           </Switch>
           </div>
         </body>
