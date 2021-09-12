@@ -9,6 +9,7 @@ import Inicio from './components/main/inicio';
 import Accion from './components/Acciones/accion';
 import Footer from './components/footer/footer';
 import Peticion from './components/Acciones/peticion'
+import Tutela from './components/Acciones/tutela'
 
 class App extends Component {
   render () {
@@ -24,6 +25,9 @@ class App extends Component {
           </Route>
           <Route path='/Acciones/derecho-de-peticion' exact>
             <Peticion></Peticion>
+          </Route>
+          <Route path='/Acciones/accion-de-tutela' exact>
+            <Tutela></Tutela>
           </Route>
         </Switch>
         <Footer></Footer>
