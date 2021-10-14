@@ -33,16 +33,18 @@ class Glosario extends React.Component {
           timeout={300}
           classNames="dialog"
         >
-          <Modal
-            closeTimeoutMS={500}
-            isOpen={this.state.isOpen}
-            style={modalStyles}
-          >
-            <button onClick={this.toggleModal}>
-              Cerrar Glosario
-            </button>
-            <div><h1>Aca podras encontrar el significado de las siguientes palabras</h1></div>
-          </Modal>
+					<Modal
+					closeTimeoutMS={500}
+					isOpen={this.state.isOpen}
+					style={modalStyles}
+					>
+						<button onClick={this.toggleModal}>
+								Cerrar Glosario
+						</button>
+						<div>
+							<h1>Aca podras encontrar el significado de las siguientes palabras</h1>
+						</div>
+					</Modal>
         </CSSTransition>
       </div>
     );
