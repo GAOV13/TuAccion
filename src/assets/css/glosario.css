@@ -1,21 +1,56 @@
-.ReactModal__Overlay {
-    opacity: 0;
-    transform: translateX(150%);
-    transition: all 500ms ease-in-out;
-    
-  }
-  
-.ReactModal__Overlay--after-open {
-opacity: 1;
-transform: translateX(100%);
-
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
 }
-  
-.ReactModal__Overlay--before-close {
-opacity: 0;
-transform: translateX(150%);
 
+.modal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
 }
-.principal {
-  background-color:aqua;
+
+.modal.exit {
+  opacity: 0;
+}
+
+.modal-content {
+  position: absolute;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(200px);
+}
+
+.modal.enter-done .modal-content {
+  transform: translateX(0);
+}
+
+.modal.exit .modal-content {
+  transform: translateX(200px);
+}
+
+.modal-header,
+.modal-footer {
+  padding: 10px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }

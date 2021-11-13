@@ -2,6 +2,7 @@
 
 .accion_bg {
 	background-color: (216, 216, 216);
+	position: relative;
 }
 
 .accion_header {

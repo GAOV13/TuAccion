@@ -1,23 +1,29 @@
 import React, { Component } from "react";
 import Slider from "./extras/slider";
 import '../../assets/css/peticion.css';
-import Glosario from "../modal/glosario";
+import Glosario from "../modal/extra";
+import Extra from "../modal/extra";
+
 
 class Peticion extends Component{
 	render (){
+    
 		return (
+      
 			<div className='accion_bg'>
 				<section className='temp'>
-                    <div class ="row">
-                        <div class = "column left">
-                            <h1> Conoce el derecho de Peticion </h1> 
-                            <h4> Aquí te darmeos una ruta para que entiendas...</h4>   
-                        </div>
-                        <div class = "column right">
-                            <img className='aBoton_img' src=''></img><br/>
-                            <Glosario></Glosario>
-                        </div>
-                    </div>
+          <div class = "botonGlosario">
+            <Extra></Extra>
+          </div>
+          <div class ="row">
+              <div class = "column left">
+                  <h1> Conoce el derecho de Peticion </h1> 
+                  <h4> Aquí te darmeos una ruta para que entiendas...</h4>   
+              </div>
+              <div class = "column right">
+                  <img className='aBoton_img' src=''></img><br/>
+              </div>
+          </div>
 				</section>      
 			</div>
 		);

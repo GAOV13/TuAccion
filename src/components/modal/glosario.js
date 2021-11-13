@@ -1,54 +1,45 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
-import Modal from 'react-modal';
 
 import '../../assets/css/glosario.css';
 
-class Glosario extends React.Component {
-  state = {
-    isOpen: false,
+const Glosario = props => {
+  const closeOnEscapeKeyDown = e => {
+    if ((e.charCode || e.keyCode) === 27) {
+      props.onClose();
+    }
   };
 
-  toggleModal = () => {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen,
-    }));
-  };
-  render() {
-    const modalStyles = {
-      overlay: {
-        
-        width: '50%',
-        backgroundColor: 'red',
-      },
+  useEffect(() => {
+    document.body.addEventListener("keydown", closeOnEscapeKeyDown);
+    return function cleanup() {
+      document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
     };
-    return (
-      <div>
-        <button onClick={this.toggleModal}>
-          Glosario
-        </button>
-        <CSSTransition
-          in={this.state.isOpen}
-          timeout={300}
-          classNames="dialog"
-        >
-					<Modal
-					closeTimeoutMS={500}
-					isOpen={this.state.isOpen}
-					style={modalStyles}
-					>
-						<button onClick={this.toggleModal}>
-								Cerrar Glosario
-						</button>
-						<div>
-							<h1>Aca podras encontrar el significado de las siguientes palabras</h1>
-						</div>
-					</Modal>
-        </CSSTransition>
+  }, []);
+
+  return ReactDOM.createPortal(
+    <CSSTransition
+      in={props.show}
+      unmountOnExit
+      timeout={{ enter: 0, exit: 300 }}
+    >
+      <div className="modal" onClick={props.onClose}>
+        <div className="modal-content" onClick={e => e.stopPropagation()}>
+          <div className="modal-header">
+            <h4 className="modal-title">{props.title}</h4>
+          </div>
+          <div className="modal-body">{props.children}</div>
+          <div className="modal-footer">
+            <button onClick={props.onClose} className="button">
+              Close
+            </button>
+          </div>
+        </div>
       </div>
-    );
-  }
-}
+    </CSSTransition>,
+    document.getElementById("root")
+  );
+};
 
 export default Glosario;
