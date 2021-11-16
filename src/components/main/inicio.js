@@ -9,42 +9,44 @@ import Anfi from "../../assets/img/Anfibio.png";
 class Inicio extends Component {
   render() {
     return (
-      <section className='inicio_bg'>
-        <section className='inicio_elabora'>
+      <section className='bg1'>
+        <section className='box_container inicio_elabora '>
           <div className='inicio_elabora_info'>
-            <h2>our vision</h2>
-            <h1>Elabora tus acciones<br/>de forma sencilla</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur asipiscing elit. Tristique
-              <br/>arcu a nisi semper. Ut cras odio ac sem ac.
-            </p>
-            <ul>
-              <li>
-                <i className='fas fa-check-circle'><p>Obten autonomía</p></i>
-              </li>
-              <li>
-                <i className='fas fa-check-circle'><p>Garantiza celeridad en los procesos</p></i>
-              </li>
-              <li>
-                <i className='fas fa-check-circle'><p>Aprende sin complicaciones</p></i>
-              </li>
-            </ul>
-            <Link className='inicio_link' to='/Acciones'>Conoce las acciones</Link>
+            <div className='inicio_elabora_info_con'>
+              <h2 className='color_letraT'>our vision</h2>
+              <h1>Elabora tus acciones<br/>de forma sencilla</h1>
+              <p className='color_letra'>
+                Lorem ipsum dolor sit amet, consectetur asipiscing elit. Tristique
+                <br/>arcu a nisi semper. Ut cras odio ac sem ac.
+              </p>
+              <ul>
+                <li>
+                  <i className='fas fa-check-circle'><p>Obten autonomía</p></i>
+                </li>
+                <li>
+                  <i className='fas fa-check-circle'><p>Garantiza celeridad en los procesos</p></i>
+                </li>
+                <li>
+                  <i className='fas fa-check-circle'><p>Aprende sin complicaciones</p></i>
+                </li>
+              </ul>
+              <Link className='inicio_link' to='/Acciones'>Conoce las acciones</Link>
+            </div>
           </div>
           <div className='inicio_elavora_img'>
             <img src={Logo}></img>
           </div>
         </section>
-        <section className='inicio_necesitas'>
-          <div className='inicio_necesitas_info'>
+        <section className='inicio_necesitas bg2'>
+          <div className='inicio_necesitas_info box_container'>
             <h1>¿Qué necesitas?</h1>
-            <p>
+            <p className='color_letra'>
               Estas son las rutas que tenemos para ti, de manera que en el
               <br/>ultimo boton ya tengas claridad respecto a la acción que
               <br/> deseas realizar.   
             </p>
           </div>
-          <div className='inicio_necesitas_container'>
+          <div className='inicio_necesitas_container box_container'>
             <InicioCard 
               titulo="Acciones" imagen={Logo} direccion="/Acciones" 
               texto="Tres tristes tigres tragaban trigo en un trigal mientras uno se quedaba sin trigo para alimentar"

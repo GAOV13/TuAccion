@@ -1,12 +1,11 @@
 @charset "utf-8";
 
 .accion_bg {
-	background-color: (216, 216, 216);
+	background-color: rgb(216, 216, 216);
 	position: relative;
 }
 
 .accion_header {
-	background-color: rgb(216, 216, 216);
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
@@ -15,9 +14,10 @@
 }
 
 .accion_info{
-	background-color: rgb(216, 216, 216);
-	width: 60%;
-  padding: 100px 0 0 300px;
+  width: 60%;
+  left: 15%;
+  top: 10%;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 }
@@ -42,7 +42,6 @@
 }
 
 .accion_boton_container {
-	background-color: rgb(216, 216, 216);
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
@@ -62,6 +61,7 @@
 	color: #3be5b2;
 	transition: 1s;
 }
+
 .aBoton_info img {
 	opacity: 0.8;
 	cursor: pointer;
@@ -75,7 +75,8 @@
 .accion_img {
 	width: 40%;
 	height: 100%;
-	position: relative;
+	right: 0;
+	position: absolute;
 }
 
 .accion_container{

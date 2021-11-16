@@ -8,15 +8,15 @@ class Tutela extends Component{
 		return (
 			<div className='accion_bg'>
 				<section className='temp'>
-                    <div class ="row">
-                        <div class = "column left">
-                            <h1> Conoce la tutela </h1> 
-                            <h4> Aquí te darmeos una ruta para que entiendas...</h4>   
-                        </div>
-                        <div class = "column right">
-                            <img className='aBoton_img' src={Ave}></img><br/>
-                        </div>
-                    </div>
+          <div class ="row">
+              <div class = "column left">
+                <h1> Conoce la tutela </h1> 
+                <h4> Aquí te darmeos una ruta para que entiendas...</h4>   
+              </div>
+              <div class = "column right">
+                <img className='aBoton_img' src={Ave}></img><br/>
+              </div>
+          </div>
 				</section>      
 			</div>
 		);
