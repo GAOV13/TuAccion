@@ -11,14 +11,14 @@ class InicioCard extends Component{
             {this.props.texto}
           </p>
           <div className='inicioCard_link_container'>
-            <Link className='inicio_link inicioCard_link' to={this.props.direccion}>
-              Conocer 
-              <i className="fas fa-solid fa-arrow-right"></i>
+            <Link className='inicioCard_link inicio_link' to={this.props.direccion}>
+              <h1>{this.props.titulo}</h1> 
+              <i className='fas fa-solid fa-arrow-right'></i>
             </Link>
           </div>
           <div className='inicioCard_img_container'>
-            <img src={this.props.imagen}></img>
-            <h1>{this.props.titulo}</h1>
+            <i className={this.props.icono}></i>
+            {/* <h1></h1> */}
           </div>
         </div>
       </div>

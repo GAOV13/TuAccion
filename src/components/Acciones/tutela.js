@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "./extras/slider";
 import '../../assets/css/peticion.css';
 import Ave from "../../assets/img/Ave.png";
+import tutel from "../../assets/img/tutela1.jpg";
 
 class Tutela extends Component{
 	render (){
@@ -17,7 +18,10 @@ class Tutela extends Component{
                 <img className='aBoton_img' src={Ave}></img><br/>
               </div>
           </div>
-				</section>      
+				</section>  
+        <section className='tutela_container'>
+          <img src={tutel}></img>
+        </section>    
 			</div>
 		);
 	}
