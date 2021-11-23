@@ -7,7 +7,6 @@ class AccionBoton extends Component {
     return (
 			<Link className='aBoton_info' to={this.props.direccion}>
 				<img className='aBoton_img' src={this.props.imagen}></img><br/>
-				{this.props.nombre}
 			</Link>
     );
   }

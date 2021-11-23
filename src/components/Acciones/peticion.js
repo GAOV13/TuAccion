@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Slider from "./extras/slider";
 import '../../assets/css/peticion.css';
 import Glosario from "../modal/extra";
 import Extra from "../modal/extra";
+import Derecho from "../../assets/img/peticion.jpg"
 
 
 class Peticion extends Component{
@@ -14,15 +14,15 @@ class Peticion extends Component{
             <Extra></Extra>
           </div>
           <div class ="row">
-            <div class = "column left">
-              <h1> Conoce el derecho de Peticion </h1> 
+            <div class = "column center">
+              <h1> Conoce sobre el Derecho de Petición </h1> 
               <h4> Aquí te darmeos una ruta para que entiendas...</h4>   
             </div>
-            <div class = "column right">
-              <img className='aBoton_img' src=''></img><br/>
-            </div>
           </div>
-				</section>      
+				</section> 
+        <section className='peticion_container'>
+          <img src={Derecho}></img>
+        </section>      
 			</div>
 		);
 	}

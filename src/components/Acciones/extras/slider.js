@@ -1,23 +1,22 @@
 import { Component } from "react";
 import { Link } from 'react-router-dom';
 import "../../../assets/css/slider.css"
-import Celes from "../../../assets/img/celeste2.jpg"
-import Anfi from "../../../assets/img/Anfibio.png"
-import Legal from "../../../assets/img/legaltech.jpg"
+import IMG1 from "../../../assets/img/BANNER1.jpg"
+import IMG2 from "../../../assets/img/BANNER2.jpg"
 
 class Slider extends Component {
   render (){
     return (
       <div className="slideshow-container">
         <div className={this.state.mySlides[0]}>
-          <img src={Legal}></img>
+          <img src={IMG1}></img>
           <div className="texto">  
             <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
             <p className="author">- John Keats</p>
           </div>
         </div>
         <div className={this.state.mySlides[1]}>
-          <img src={Celes}></img>
+          <img src={IMG2}></img>
           <div className="texto">
             <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
             <p className="author">- Ernest Hemingway</p>

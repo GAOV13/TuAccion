@@ -2,12 +2,12 @@
 
 .column {
     float: left;
-    padding: 200px;
+    padding: 50px;
 }
   
-.left {
-    width: 70%;
-    text-align: left;
+.center {
+    width: 100%;
+    text-align: center;
 }
 
 .right {
@@ -25,10 +25,19 @@
 .tutela_container{
     height: 300vh;
     width: 100%;
-    background-color: aqua;
 }
 
 .tutela_container img{
+    height: 100%;
+    width: 100%;
+}
+
+.peticion_container{
+    height: 400vh;
+    width: 100%;
+}
+
+.peticion_container img{
     height: 100%;
     width: 100%;
 }

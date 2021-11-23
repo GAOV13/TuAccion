@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import AccionBoton from "./extras/accionBoton";
-import Ave from "../../assets/img/Ave.png";
-import Anfibio from "../../assets/img/legaltech.jpg";
-import Slider from "./extras/slider";
+import Peticion from "../../assets/img/linkPeticion.jpg";
+import Tutela from "../../assets/img/linkTutela.jpg";
 
 class Accion extends Component{
 	render (){
@@ -11,24 +10,19 @@ class Accion extends Component{
 				<section className='accion_header'>
 					<div className='accion_info'>
 						<div className='accion_palabras'>
-							<h2>our vision</h2>
-							<h1>¿Qué acción quieres<br/>conocer?</h1>
+							<h1>¿Qué acción quieres conocer?</h1>
 							<p>
 								Haz clic en las palabras subrayadas para conocer<br/>su significado, o presiona el botón.
 							</p>
 						</div>
 						<div className='accion_boton_container'>
-							<AccionBoton nombre="Derecho de Petición" direccion="/Acciones/derecho-de-peticion" imagen={Ave}></AccionBoton>
-							<AccionBoton nombre="Acción de Tutela" direccion="/Acciones/accion-de-tutela" imagen={Anfibio}></AccionBoton>
+							<AccionBoton  direccion="/Acciones/derecho-de-peticion" imagen={Peticion}></AccionBoton>
+							{/* <AccionBoton nombre="Derecho de Petición" direccion="/Acciones/derecho-de-peticion" imagen={Peticion}></AccionBoton>
+							<AccionBoton nombre="Acción de Tutela" direccion="/Acciones/accion-de-tutela" imagen={Tutela}></AccionBoton> */}
+							<AccionBoton  direccion="/Acciones/accion-de-tutela" imagen={Tutela}></AccionBoton>
 						</div>
 					</div>
-					<div className='accion_img'>
-            <Slider onIdSelect={this.updateId} id={this.state.id} pag={"/Acciones"}></Slider>
-					</div>
-				</section>
-				<section className='temp'>
-					{/* <h1>Hola Compañeros</h1> */}
-				</section>      
+				</section>   
 			</section>
 		);
 	}

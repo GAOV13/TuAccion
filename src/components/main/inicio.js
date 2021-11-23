@@ -3,18 +3,23 @@ import { Link } from 'react-router-dom'
 import InicioCard from './inicioCard';
 import Slider from '../Acciones/extras/slider';
 import '../../assets/css/inicio.css'
-import Temporal from "../../assets/img/Temporal.jpg";
+import Heroe  from "../../assets/img/heroe.jpg";
+import Accion from "../../assets/img/accionA.jpg";
+import IconoTuAccion from "../../assets/img/elaboraA.jpg";
+import Derecho from "../../assets/img/derechoA.jpg"
+import Glosario from "../../assets/img/glosarioA.jpg"
 
 class Inicio extends Component {
   render() {
     return (
       <section className='bg1'>
+        {/* Inicio de la pagina */}
         <section className='box_container inicio_elabora'>
           {/* Imagen de fondo */}
-          <img src={Temporal} className="temporal"></img>
+          <img src={Heroe} className="temporal"></img>
+          {/* Texto del principio */}
           <div className='inicio_elabora_info'>
             <div className='inicio_elabora_info_con'>
-              {/* <h2 className='color_letraT'>our vision</h2> */}
               <h1>Conoce y Elabora tus acciones de forma sencilla</h1>
               <p className='color_letra'>
                 Conoce las principales acciones constitucionales y derechos fundamentales, para finalmente
@@ -30,21 +35,14 @@ class Inicio extends Component {
                 <li>
                   <i className='fas fa-check-circle'><p>Obtén fácil acceso a la información</p></i>
                 </li>
-                {/* <li>
-                  <i className='fas fa-check-circle'><p>Favorece celeridad en los procesos</p></i>
-                </li> */}
-                {/* <li>
-                  <i className='fas fa-check-circle'><p>Aprende sin complicaciones</p></i>
-                </li> */}
               </ul>
               {/* <Link className='inicio_link' to='/Acciones'>Conoce las acciones</Link> */}
             </div>
           </div>
-          {/* <div className='inicio_elavora_img'>
-            <img src={Logo}></img>
-          </div> */}
         </section>
+        {/* Boxes para lo que necesitas hacer en la pagina */}
         <section className='inicio_necesitas bg2'>
+          {/* Información */}
           <div className='inicio_necesitas_info box_container'>
             <h1>¿Qué necesitas?</h1>
             <p className='color_letra'>
@@ -53,25 +51,27 @@ class Inicio extends Component {
               <br/> deseas realizar.   
             </p>
           </div>
+          {/* Boxes */}
           <div className='inicio_necesitas_container box_container'>
             <InicioCard 
-              titulo="Acciones" icono='fas fa-book' direccion="/Acciones" 
+              titulo="Acciones" imagen={Accion} direccion="/Acciones" 
               texto="Conoce sobre las principales acciones constitucionales"
             ></InicioCard>
             <InicioCard
-              titulo="Glosario" icono="fas fa-list" direccion="/Glosario" 
+              titulo="Glosario" imagen={Glosario} direccion="/Glosario" 
               texto="Investiga las palabras que no conozcas"
             ></InicioCard>
             <InicioCard 
-              titulo="Derechos" icono="fas fa-balance-scale-right" direccion="/Derechos" 
+              titulo="Derechos"  imagen={Derecho} direccion="/Derechos" 
               texto="Conoce tus derechos fundamentales"
             ></InicioCard>
             <InicioCard 
-              titulo="Tu Acción" icono="fas fa-plus" direccion="/elabora-tu-accion" 
+              titulo="Tu Acción" imagen={IconoTuAccion} direccion="/elabora-tu-accion" 
               texto="Elabora tu acción con nuestra ayuda"
             ></InicioCard>
           </div>
         </section>
+        {/* Slider */}
         <section className='inicio_objetivo'>
           <Slider onIdSelect={this.updateId} id={this.state.id} pag="/"></Slider>
         </section>

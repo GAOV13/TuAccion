@@ -1,21 +1,20 @@
 import React, { Component } from "react";
-import Slider from "./extras/slider";
 import '../../assets/css/peticion.css';
-import Ave from "../../assets/img/Ave.png";
 import tutel from "../../assets/img/tutela1.jpg";
+import Extra from "../modal/extra";
 
 class Tutela extends Component{
 	render (){
 		return (
 			<div className='accion_bg'>
 				<section className='temp'>
+          <div class = "botonGlosario">
+            <Extra></Extra>
+          </div>
           <div class ="row">
-              <div class = "column left">
-                <h1> Conoce la tutela </h1> 
+              <div class = "column center">
+                <h1> Conoce sobre la acción de tutela</h1> 
                 <h4> Aquí te darmeos una ruta para que entiendas...</h4>   
-              </div>
-              <div class = "column right">
-                <img className='aBoton_img' src={Ave}></img><br/>
               </div>
           </div>
 				</section>  

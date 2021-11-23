@@ -17,8 +17,7 @@ class InicioCard extends Component{
             </Link>
           </div>
           <div className='inicioCard_img_container'>
-            <i className={this.props.icono}></i>
-            {/* <h1></h1> */}
+            <img src={this.props.imagen}></img>
           </div>
         </div>
       </div>
