@@ -22,7 +22,7 @@ class Navbar extends Component{
           <Link className="nav_links" to="/Contact">Contact</Link>
         </div>
         <div className="nav_serch">
-          <input type="serch" placeholder="Serch" aria-label="Search"></input>
+          <input type="serch" placeholder="Buscar..." aria-label="Search"></input>
         </div>
       </nav>
     );
