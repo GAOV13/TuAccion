@@ -10,7 +10,7 @@ class Navbar extends Component{
         <div className="nav_logo">
           <h1>
             <img src={Logo} width="50" height="40"></img>
-            TU ACCIÓN
+            <Link className="nav_links" to="/">TU ACCION</Link>
           </h1>
         </div>
         <div className="nav_links_container">
@@ -19,7 +19,7 @@ class Navbar extends Component{
           <Link className="nav_links" to="/Glosario">Glosario</Link>
           <Link className="nav_links" to="/Derechos">Derechos</Link>
           <Link className="nav_links" to="/elabora-tu-accion">Elabora tu Acción</Link>
-          <Link className="nav_links" to="/Contact">Contact</Link>
+          <Link className="nav_links" to="/Contact">Contacto</Link>
         </div>
         <div className="nav_serch">
           <input type="serch" placeholder="Buscar..." aria-label="Search"></input>
