@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "../../../assets/css/slider.css"
 import IMG1 from "../../../assets/img/BANNER1.jpg"
 import IMG2 from "../../../assets/img/BANNER2.jpg"
+import IMG3 from "../../../assets/img/BANNER3.jpg"
 
 class Slider extends Component {
   render (){
@@ -23,7 +24,7 @@ class Slider extends Component {
           </div> */}
         </div>
         <div className={this.state.mySlides[2]}>
-          {/* <img src="https://4.bp.blogspot.com/-_D_c824ezhw/WqmEgd7XReI/AAAAAAAB0zQ/hFgzXIP2ahwBvP93WzziZZR_3KCM7Ws3QCK4BGAYYCw/s1600/imagenes-paisajes-hermosos-cbezerraphotos-emerald-lake-canada.jpg"></img> */}
+        <img src={IMG3}></img>
           {/* <div className="texto">  
             <q>I have not failed. I've just found 10,000 ways that won't work.</q>
             <p className="author">- Thomas A. Edison</p>
