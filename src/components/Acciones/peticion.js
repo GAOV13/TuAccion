@@ -10,9 +10,9 @@ class Peticion extends Component{
 		return (
 			<div className='accion_bg'>
 				<section className='temp'>
-          <div class = "botonGlosario">
+          {/* <div class = "botonGlosario">
             <Extra></Extra>
-          </div>
+          </div> */}
           <div class ="row">
             <div class = "column center">
               <h1> Conoce sobre el Derecho de Petición </h1> 
