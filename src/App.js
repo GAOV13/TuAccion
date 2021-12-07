@@ -29,6 +29,18 @@ class App extends Component {
           <Route path='/Acciones/accion-de-tutela' exact>
             <Tutela></Tutela>
           </Route>
+          <Route path='/Glosario' exact>
+            <h1>En desarrollo</h1>
+          </Route >
+          <Route path='/Derechos' exact>
+            <h1>En desarrollo</h1>
+          </Route >
+          <Route path='/elabora-tu-accion' exact>
+            <h1>En desarrollo</h1>
+          </Route >
+          <Route path='/Contact' exact>
+            <h1>En desarrollo</h1>
+          </Route >
         </Switch>
         <Footer></Footer>
       </div>   
