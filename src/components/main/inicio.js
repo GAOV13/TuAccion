@@ -27,13 +27,13 @@ class Inicio extends Component {
               </p>
               <ul>
                 <li>
-                  <i className='fas fa-check-circle'><p>Accede a una herramienta pedagogica y autónomo</p></i>
+                  <i className='fas fa-check-circle'><p className='letra_bullets'>Accede a una herramienta pedagogica y autónomo</p></i>
                 </li>
                 <li>
-                  <i className='fas fa-check-circle'><p>Aprende con un lenguaje sencillo</p></i>
+                  <i className='fas fa-check-circle'><p className='letra_bullets'>Aprende con un lenguaje sencillo</p></i>
                 </li>
                 <li>
-                  <i className='fas fa-check-circle'><p>Obtén fácil acceso a la información</p></i>
+                  <i className='fas fa-check-circle'><p className='letra_bullets'>Obtén fácil acceso a la información</p></i>
                 </li>
               </ul>
               {/* <Link className='inicio_link' to='/Acciones'>Conoce las acciones</Link> */}
