@@ -20,9 +20,9 @@ class Inicio extends Component {
           {/* Texto del principio */}
           <div className='inicio_elabora_info'>
             <div className='inicio_elabora_info_con'>
-              <h1>Conoce y Elabora tus acciones de forma sencilla</h1>
+              <h1>Conoce y Elabora tus <br/>acciones de forma sencilla</h1>
               <p className='color_letra'>
-                Conoce las principales acciones constitucionales y derechos fundamentales, para finalmente
+                Conoce las principales acciones constitucionales y derechos <br/>fundamentales, para finalmente
                 elaborar tu acción.
               </p>
               <ul>

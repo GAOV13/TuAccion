@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 6vh;
+  /*Original 
+	height: 7vh; */
+	/* Arreglos isa */
+  height: 10vh;
 }
 
 .nav_logo{
